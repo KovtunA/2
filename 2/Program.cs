@@ -12,15 +12,18 @@ namespace _2
             int y = getNumber();
 
             if (x > 0)
+            {
                 if (y > 0)
                 {
                     Console.WriteLine("Your point is in first quarter ");
                 }
                 else
                 {
-                    Console.WriteLine("Your quarter is in fourth quarter");
+                    Console.WriteLine("Your point is in fourth quarter");
                 }
+            }
             else if (x < 0)
+            {
                 if (y > 0)
                 {
                     Console.WriteLine("Your point is in second quarter");
@@ -29,10 +32,11 @@ namespace _2
                 {
                     Console.WriteLine("Your point is in third quarter");
                 }
-
-
+            }
         }
-        private static Int32 getNumber()         {             string userInput = Console.ReadLine();              try { return Convert.ToInt32(userInput); }             catch             {                 Console.WriteLine("Invalid input, please try again");                 return getNumber();             }
+
+        private static Int32 getNumber() 
+        {             string userInput = Console.ReadLine();              try { return Convert.ToInt32(userInput); }             catch             {                 Console.WriteLine("Invalid input, please try again");                 return getNumber();             }
         }
     }
 }
